@@ -16,3 +16,20 @@ describe('Enqueue',function(){
     })
   })
 })
+describe('Dequeue',function(){
+  describe('Dequeue a task',function(){
+    it('removes Tasks',function(){
+      preLoader.clear()
+      preLoader.enqueueTask(1)
+      preLoader.enqueueTask(2)
+      preLoader.enqueueTask(3)
+      preLoader.dequeueTask(3)
+      expect(preLoader.getQueue()).to.deep.equal([1,2])
+    })
+    it('Dequeue non existant task gives error',function(){
+      expect(function(){
+        preLoader.dequeueTask(3)
+      }).to.throw(Error)
+    })
+  })
+})
