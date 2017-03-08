@@ -1,5 +1,5 @@
 {
-  "name": "preloaderQ",
+  "name": "preloaderq",
   "version": "1.0.0",
   "description": "simple lightweight preloader queue for handling multiple asynchronous functions",
   "main": "index.js",
