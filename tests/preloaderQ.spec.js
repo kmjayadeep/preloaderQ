@@ -75,4 +75,25 @@ describe('Callbacks',function(){
       preLoader.enqueueTask(1)
     })
   })
+  describe('Dequeue Callbacks',function(){
+    it('should call dequeue callback',function(done){
+      preLoader = new PreloaderQ()
+      preLoader.setDequeueCallback(function(id){
+        expect(id).to.be.equal(1)
+        done()
+      })
+      preLoader.enqueueTask(1)
+      preLoader.dequeueTask(1)
+    })
+    it('should call Empty callback',function(done){
+      preLoader.setDequeueCallback(null)
+      preLoader.setEmptyCallback(function(id){
+        expect(id).to.be.equal(1)
+        done()
+      })
+      preLoader.clear()
+      preLoader.enqueueTask(1)
+      preLoader.dequeueTask(1)
+    })
+  })
 })
