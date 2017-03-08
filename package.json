@@ -1,0 +1,11 @@
+{
+  "name": "preloaderQ",
+  "version": "1.0.0",
+  "description": "simple lightweight preloader queue for handling multiple asynchronous functions",
+  "main": "index.js",
+  "scripts":{
+    "test": "node tests/preloaderQ.spec.js"
+  },
+  "author": "Jayadeep KM",
+  "license": "MIT"
+}
