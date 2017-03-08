@@ -1,10 +1,17 @@
 {
   "name": "preloaderq",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "simple lightweight preloader queue for handling multiple asynchronous functions",
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/.bin/mocha tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kmjayadeep/preloaderQ"
+  },
+  "bugs": {
+    "url": "https://github.com/kmjayadeep/preloaderQ/issues"
   },
   "author": "Jayadeep KM",
   "license": "MIT",
