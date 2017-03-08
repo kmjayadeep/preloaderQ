@@ -3,9 +3,13 @@
   "version": "1.0.0",
   "description": "simple lightweight preloader queue for handling multiple asynchronous functions",
   "main": "index.js",
-  "scripts":{
-    "test": "node tests/preloaderQ.spec.js"
+  "scripts": {
+    "test": "./node_modules/.bin/mocha tests"
   },
   "author": "Jayadeep KM",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
+  }
 }
