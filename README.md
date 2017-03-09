@@ -2,6 +2,11 @@
 
 PreloaderQ is a javascript plugin that be used to track the flow of asynchronous/ synchronous tasks, mainly designed to show/hide loading gif on websites running multiple ajax requests
 
+[![NPM](https://nodei.co/npm/preloaderq.png)](https://npmjs.org/package/preloaderq)
+
+[![npm](https://img.shields.io/npm/dm/preloaderq.svg)](https://www.npmjs.com/package/preloaderq)
+
+
 ### Installation
 
 from npm
